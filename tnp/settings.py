@@ -19,8 +19,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'passport.sudo@gmail.com'
-EMAIL_HOST_PASSWORD = 'Shalini123'
+EMAIL_HOST_USER = 'taps@nitw.ac.in'
+EMAIL_HOST_PASSWORD = 'write_taps_password' #keep password here
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
@@ -34,11 +34,6 @@ SECRET_KEY = '8yyi(3*x2!3))*wab+xjpu8!9ab7fo_s@c_%lnc+=hp+u53dm+'
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'passport.sudo@gmail.com'
-EMAIL_HOST_PASSWORD = 'Shalini123'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
 
 # Application definition
 
@@ -109,7 +104,6 @@ WSGI_APPLICATION = 'tnp.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
-
 
 
 
@@ -196,3 +190,6 @@ ACCOUNT_PASSWORD_MIN_LENGTH = 6
 ACCOUNT_LOGIN_ON_EMAIL_CONFIRMATION = True 
 
 MEDIA_URL = '/media/'
+
+
+AUTH_USER_MODEL = 'student.StudentUser'
